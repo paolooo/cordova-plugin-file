@@ -80,6 +80,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <clobbers target="window.resolveLocalFileSystemURI" />
     </js-module>
 
+    <!-- firefoxos -->
+    <platform name="firefoxos">
+        <config-file target="config.xml" parent="/*">
+            <feature name="File" >
+                <param name="firefox-package" value="File"/>
+            </feature>
+          </config-file>
+
+    </platform>
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
