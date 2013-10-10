@@ -28,7 +28,6 @@
  * @param lastModifiedDate {Date} last modified date
  * @param size {Number} size of the file in bytes
  */
-
 var File = function(name, fullPath, type, lastModifiedDate, size) {
     var blob_ = null;
 
@@ -56,4 +55,3 @@ var File = function(name, fullPath, type, lastModifiedDate, size) {
 };
 
 module.exports = File;
-

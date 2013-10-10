@@ -86,10 +86,46 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <feature name="File" >
                 <param name="firefox-package" value="File"/>
             </feature>
-          </config-file>
+        </config-file>
 
-        <js-module src="src/firefoxos/File.js" name="File">
+        <js-module src="src/firefoxos/File.js" name="FxosFile">
             <clobbers target="window.File" />
+        </js-module>
+
+        <js-module src="src/firefoxos/Entry.js" name="FxosEntry">
+            <merges target="window.Entry" />
+        </js-module>
+
+        <js-module src="src/firefoxos/FileWriter.js" name="FxosFileWriter">
+            <clobbers target="window.FileWriter" />
+        </js-module>
+
+        <js-module src="src/firefoxos/FileEntry.js" name="FxosFileEntry">
+            <clobbers target="window.FileEntry" />
+        </js-module>
+
+        <js-module src="src/firefoxos/DirectoryReader.js" name="FxosDirectoryReader">
+            <clobbers target="window.DirectoryReader" />
+        </js-module>
+
+        <js-module src="src/firefoxos/DirectoryEntry.js" name="FxosDirectoryEntry">
+            <merges target="window.DirectoryEntry" />
+        </js-module>
+
+        <js-module src="src/firefoxos/requestFileSystem.js" name="FxosRequestFileSystem">
+            <clobbers target="window.requestFileSystem" />
+        </js-module>
+
+        <js-module src="src/firefoxos/resolveLocalFileSystemURI.js" name="FxosResolveLocalFileSystemURI">
+            <clobbers target="window.resolveLocalFileSystemURI" />
+        </js-module>
+
+        <js-module src="src/firefoxos/FileSystem.js" name="FxosFileSystem">
+            <clobbers target="window.FileSystem" />
+        </js-module>
+
+        <js-module src="src/firefoxos/indexedDB.js" name="FxosIndexedDb">
+            <clobbers target="window.storage.iDB" />
         </js-module>
     </platform>
 
@@ -216,3 +252,4 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform>
 
 </plugin>
+
