@@ -88,6 +88,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             </feature>
           </config-file>
 
+        <js-module src="src/firefoxos/File.js" name="File">
+            <clobbers target="window.File" />
+        </js-module>
     </platform>
 
     <!-- android -->
