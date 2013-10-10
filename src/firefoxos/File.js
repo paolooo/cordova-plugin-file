@@ -20,12 +20,13 @@
 */
 
 /**
- * Constructor.
- * name {DOMString} name of the file, without path information
- * fullPath {DOMString} the full path of the file, including the name
- * type {DOMString} mime type
- * lastModifiedDate {Date} last modified date
- * size {Number} size of the file in bytes
+ * File Constructor
+ *
+ * @param name {DOMString} name of the file, without path information
+ * @param fullPath {DOMString} the full path of the file, including the name
+ * @param type {DOMString} mime type
+ * @param lastModifiedDate {Date} last modified date
+ * @param size {Number} size of the file in bytes
  */
 
 var File = function(name, fullPath, type, lastModifiedDate, size) {
